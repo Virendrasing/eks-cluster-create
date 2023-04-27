@@ -14,7 +14,7 @@ pipeline {
                         sh "terraform init -upgrade"
                         sh "terraform init -reconfigure"
                         sh "terraform init"
-                        sh "terraform destroy -auto-approve"
+                        sh "terraform apply -auto-approve"
                     }
                 }
             }
